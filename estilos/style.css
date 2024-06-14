@@ -1,6 +1,91 @@
 @charset "UTF-8";
 
-/* Paleta de cores
-    Verde: #49a09d
-    Lilás: #5f2c82
-*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom,#5f2c82, #49a09d);
+    height: 100vh;
+    margin: auto;
+}
+main{
+    background-color: white;
+    margin: auto;
+    margin-top:100px;
+    border-radius: 20px;
+    max-width: 850px;
+    height: 350px;
+}
+
+div img{
+    display: block;
+    float: right;
+    border-radius: 0px 20px 20px 0px;
+}
+div p{
+    text-indent: 10px;
+    margin:20px;
+}
+
+div h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+label#login{
+    background-color: purple;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+input#login{
+    background-color: lightblue;
+    padding: 3px;
+    border-radius: 5px;
+    width: 335px;
+    border: none;
+}
+label#senha{
+    background-color: purple;
+    padding: 5px;
+    border-radius: 5px;    
+    margin-left:10px;
+}
+input#senha{
+    background-color: lightblue;
+    padding: 3px;
+    border-radius: 5px;
+    width: 335px;
+    border: none;
+}
+input.botao{
+    width:400px;
+    margin-left:10px;
+    margin-top: 10px;
+}
+#entrar{
+    background-color: rgb(6, 180, 180);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+#entrar:hover{
+    background-color: rgb(0, 85, 85);
+    cursor: pointer;
+}
+#forgot{
+    padding: 10px;
+    border-color: #49a09d;
+    background-color: white;
+    color: #135553;
+}
+#forgot:hover{
+    background-color: rgba(2, 207, 207, 0.836);
+    cursor: pointer;
+}
