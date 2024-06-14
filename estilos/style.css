@@ -80,8 +80,8 @@ div.campo>span{
 div.campo>input{
     background-color: #5ed4d0;
     font-size: 1em;
-    width: calc(100% - 45px);
-    height: 100%;
+    width: calc(100% - 53px);
+    height: 95%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
