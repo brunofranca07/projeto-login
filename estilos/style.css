@@ -1,91 +1,135 @@
 @charset "UTF-8";
 
+/* Paleta de cores:
+    Lilás: #5f2c82
+    Verde: #49a09d */
+
 
 *{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-    background-image: linear-gradient(to bottom,#5f2c82, #49a09d);
+body,html{
+    background-color:#5f2c82;
     height: 100vh;
-    margin: auto;
+    width: 100vw;
 }
 main{
-    background-color: white;
     margin: auto;
-    margin-top:100px;
-    border-radius: 20px;
-    max-width: 850px;
-    height: 350px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-
-div img{
-    display: block;
-    float: right;
-    border-radius: 0px 20px 20px 0px;
-}
-div p{
-    text-indent: 10px;
-    margin:20px;
-}
-
-div h1{
-    padding: 20px;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bolder;
-}
-label#login{
-    background-color: purple;
-    padding: 5px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-input#login{
-    background-color: lightblue;
-    padding: 3px;
-    border-radius: 5px;
-    width: 335px;
-    border: none;
-}
-label#senha{
-    background-color: purple;
-    padding: 5px;
-    border-radius: 5px;    
-    margin-left:10px;
-}
-input#senha{
-    background-color: lightblue;
-    padding: 3px;
-    border-radius: 5px;
-    width: 335px;
-    border: none;
-}
-input.botao{
-    width:400px;
-    margin-left:10px;
-    margin-top: 10px;
-}
-#entrar{
-    background-color: rgb(6, 180, 180);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-}
-#entrar:hover{
-    background-color: rgb(0, 85, 85);
-    cursor: pointer;
-}
-#forgot{
-    padding: 10px;
-    border-color: #49a09d;
+section#login{
     background-color: white;
-    color: #135553;
+    width: 250px;
+    height: 490px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
-#forgot:hover{
-    background-color: rgba(2, 207, 207, 0.836);
+div#imagem{
+    background:#5f2c82 url(../imagens/predio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 200px;
+    display: block;
+}
+
+section#login>div#formulario{
+    display: block;
+    padding: 10px;
+    
+}
+
+div#formulario>h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario>p{
+    font-size: 0.8em;
+}
+
+form>div.campo{
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+div.campo>span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo>input{
+    background-color: #5ed4d0;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo>input:focus-within{
+    background-color: white;
+    border: none;
+
+}
+
+form>input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#49a09d ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form>input[type=submit]:hover{
+    background-color: #275553;
     cursor: pointer;
 }
+
+form>a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #275553;
+}
+
+form>a.botao:hover{
+    background-color: #67e0dc;
+}
+form>a.botao>i{
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+
